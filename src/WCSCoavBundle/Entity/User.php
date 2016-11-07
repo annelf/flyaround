@@ -68,10 +68,10 @@ class User
     /**
      * Add reservations
      *
-     * @param \WCS\CoavBundle\Entity\Reservation $reservations
+     * @param \WCSCoavBundle\Entity\Reservation $reservations
      * @return User
      */
-    public function addReservation(\WCS\CoavBundle\Entity\Reservation $reservations)
+    public function addReservation(\WCSCoavBundle\Entity\Reservation $reservations)
     {
         $this->reservations[] = $reservations;
 
@@ -81,9 +81,9 @@ class User
     /**
      * Remove reservations
      *
-     * @param \WCS\CoavBundle\Entity\Reservation $reservations
+     * @param \WCSCoavBundle\Entity\Reservation $reservations
      */
-    public function removeReservation(\WCS\CoavBundle\Entity\Reservation $reservations)
+    public function removeReservation(\WCSCoavBundle\Entity\Reservation $reservations)
     {
         $this->reservations->removeElement($reservations);
     }
